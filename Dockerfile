@@ -15,7 +15,7 @@ RUN git clone ${repositoryUrl} .
 
 # Restore packages and publish app
 RUN dotnet restore
-RUN dotnet publish -c ${configuration}
+#RUN dotnet publish -c ${configuration}
 
 # Copy files to /app
 RUN mv /temp/${distFolder} /app
