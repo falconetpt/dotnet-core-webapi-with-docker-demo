@@ -18,7 +18,7 @@ RUN dotnet restore
 #RUN dotnet publish -c ${configuration}
 
 # Copy files to /app
-RUN mv /temp/${distFolder} /app
+#RUN mv /temp/${distFolder} /app
  
 # Expose port for the Web API traffic
 ENV ASPNETCORE_URLS http://+:${apiPort}
